@@ -1,6 +1,7 @@
 body{
     display: flex;
     height:100vh;
+    left: 100px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
