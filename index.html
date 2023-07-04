@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="birthday-cake">
+        <div class="cake">
+            <div class="middle"></div>
+            <div class="chocs"></div>
+            <div class="top"></div>
+        </div>
+        <div class="candles">
+            <div class="flame"></div>
+            <div class="flame2"></div>
+            <div class="flame3"></div>
+            <div class="shadows"></div>
+            <div class="text">Happy Birthday Mon!!!</div>
+        </div>
+        <p class="text2">*Bấm vào lửa để thổi nến</p>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+    $(".candles").click(function(){
+        $(".flame").animate({"opacity":0}, "fast");
+        $(".flame2").animate({"opacity":0}, "fast");
+        $(".flame3").animate({"opacity":0}, "fast");
+        $(".text").animate({"opacity":1 ,"top": -90}, "fast");
+    });
+});
+</script>
+</html>
